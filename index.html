@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おむつ記録</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #23262b;
+    --muted: #5b6572;
+    --line: #e3e7ec;
+    --accent: #4a90d9;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --text: #edeff2;
+      --muted: #9aa3b2;
+      --line: #2c3138;
+      --accent: #6fa8e0;
+      --surface: #1c2027;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 5rem 1.25rem 5rem;
+  }
+  h1 { font-size: 1.7rem; margin: 0 0 0.6rem; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); margin: 0 0 2.5rem; }
+  nav { display: flex; flex-direction: column; gap: 0.75rem; }
+  nav a {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    padding: 0.9rem 1.1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav a:hover { border-color: var(--accent); }
+  .contact { margin-top: 2.5rem; color: var(--muted); font-size: 0.92rem; }
+  .contact a { color: var(--accent); }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>おむつ記録</h1>
+<p class="lede">
+  赤ちゃんのおむつ交換を記録し、うっかり長時間の放置を防ぐiOSアプリです。
+  記録はすべて端末内にのみ保存されます。
+</p>
+
+<nav>
+  <a href="./support.html">サポート・よくある質問</a>
+  <a href="./privacy.html">プライバシーポリシー</a>
+</nav>
+
+<p class="contact">
+  お問い合わせ： <a href="mailto:buildscya@gmail.com">buildscya@gmail.com</a>
+</p>
+
+<footer>
+  おむつ記録
+</footer>
+
+</main>
+</body>
+</html>

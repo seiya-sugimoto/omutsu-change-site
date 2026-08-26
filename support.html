@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おむつ記録 サポート</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #23262b;
+    --muted: #5b6572;
+    --line: #e3e7ec;
+    --accent: #4a90d9;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --text: #edeff2;
+      --muted: #9aa3b2;
+      --line: #2c3138;
+      --accent: #6fa8e0;
+      --surface: #1c2027;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.85;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 1.6rem; line-height: 1.4; margin: 0 0 0.5rem; text-wrap: balance; }
+  .lede { color: var(--muted); font-size: 0.95rem; margin: 0 0 2.5rem; }
+  h2 {
+    font-size: 1.1rem;
+    margin: 2.5rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 0.98rem; margin: 1.5rem 0 0.3rem; }
+  p, li { font-size: 0.98rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin-bottom: 0.4rem; }
+  a { color: var(--accent); }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    padding: 1rem 1.15rem;
+    margin: 1.25rem 0;
+  }
+  .callout p { margin: 0; }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>おむつ記録 サポート</h1>
+<p class="lede">よくあるご質問と、お問い合わせ先をご案内します。</p>
+
+<div class="callout">
+  <p>
+    ご不明な点やご要望は
+    <a href="mailto:buildscya@gmail.com">buildscya@gmail.com</a>
+    までお気軽にご連絡ください。
+  </p>
+</div>
+
+<h2>使い方</h2>
+
+<h3>記録する</h3>
+<p>
+ホーム画面の「おむつ交換を記録」を押して、種別（おしっこ / うんち / 両方 / 不明）を選ぶだけです。
+時刻は自動で入るので、日時の入力は必要ありません。
+前回と同じ種別でよければ、ボタンを長押しするだけでも記録できます。
+</p>
+
+<h3>間違えて記録したとき</h3>
+<p>
+記録した直後であれば、ホーム画面に数秒間表示される「取り消す」から取り消せます。
+時間が経ったものは「履歴」タブから該当の記録をタップして、日時・種別・メモを直したり削除したりできます。
+</p>
+
+<h3>通知が届かないとき</h3>
+<ul>
+  <li>iPhoneの「設定」→「おむつ記録」→「通知」が許可されているかご確認ください</li>
+  <li>アプリの「設定」→「通知設定」で、通知がオンになっているかご確認ください</li>
+  <li>「今日はおやすみ」を押していると、翌朝までお知らせを止めています。ホーム画面上部のバナーから再開できます</li>
+  <li>「夜間通知」をオフにしている場合、夜間帯のお知らせは翌朝まで繰り延べられます</li>
+</ul>
+
+<h3>通知の「交換した」ボタン</h3>
+<p>
+通知を長押し（または下にスワイプ）すると、ボタンが表示されます。
+「交換した」を押すとアプリを開かずに記録でき、種別は「不明」として保存されます。
+あとから履歴の上部に出る案内から、まとめて種別をつけられます。
+</p>
+
+<h2>データについて</h2>
+
+<h3>記録はどこに保存されますか</h3>
+<p>
+すべてお使いのiPhoneの中だけに保存されます。外部のサーバーには送信されません。
+アカウント登録もログインも不要です。
+</p>
+
+<h3>機種変更するときは</h3>
+<p>
+「設定」→「記録を書き出す (CSV)」でファイルとして保存し、
+新しい端末で「設定」→「記録を取り込む (CSV)」から読み込んでください。
+交換日時が同じ記録は重複として除かれるので、同じファイルを二度取り込んでも記録は増えません。
+</p>
+
+<div class="callout">
+  <p>
+    <strong>ご注意：</strong>記録は端末内にのみ保存されるため、
+    アプリを削除すると記録も削除されます。大切な記録は書き出して保存しておくことをおすすめします。
+  </p>
+</div>
+
+<h3>お子さまの写真について</h3>
+<p>
+写真の登録は任意です。登録した写真は端末内にのみ保存され、
+外部のサーバーやAIサービスへ送信されることは一切ありません。いつでも削除できます。
+</p>
+
+<h2>Proについて</h2>
+
+<h3>Proでできること</h3>
+<ul>
+  <li>お子さまごとの交換傾向に合わせた通知の自動調整</li>
+  <li>時間帯別の予測（朝・昼・夕方・夜）</li>
+  <li>通知感度の調整（早め / 標準 / 遅め）</li>
+  <li>時間帯別・種別別の詳細な統計</li>
+  <li>記録のCSV書き出しと取り込み</li>
+</ul>
+
+<h3>解約したいとき</h3>
+<p>
+iPhoneの「設定」→ ご自身の名前 →「サブスクリプション」からいつでも解約できます。
+期間終了の24時間前までに解約しない限り自動更新されます。
+</p>
+
+<h3>機種変更や再インストール後にProが使えないとき</h3>
+<p>
+アプリの「設定」→「購入の復元」をお試しください。
+購入時と同じApple IDでサインインしている必要があります。
+</p>
+
+<h2>免責</h2>
+<p>
+本アプリが表示するお知らせは、これまでの記録にもとづく目安であり、医療的な助言や診断ではありません。
+お子さまの体調に不安がある場合は、医療機関にご相談ください。
+</p>
+
+<h2>関連ページ</h2>
+<p><a href="./privacy.html">プライバシーポリシー</a></p>
+
+<footer>
+  おむつ記録 — Support
+</footer>
+
+</main>
+</body>
+</html>
